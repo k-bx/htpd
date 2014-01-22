@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="How to Design Programs, Second Edition" title="How to Design Programs, Second Edition">
+<page file="part_prologue.html" text="Prologue:   How to Program" title="Prologue: How to Program"/>
+<page file="part_one.html" text="Fixed-Size Data" title="I Fixed-Size Data"/>
+<page file="i1-2.html" text="Intermezzo:   BSL" title="Intermezzo: BSL"/>
+<page file="part_two.html" text="Arbitrarily Large Data" title="II Arbitrarily Large Data"/>
+<page file="i2-3.html" text="Intermezzo:   Quote, Unquote" title="Intermezzo: Quote, Unquote"/>
+<page file="part_three.html" text="Abstraction" title="III Abstraction"/>
+<page file="intermezzo__scope.html" text="Intermezzo:   Scope" title="Intermezzo: Scope"/>
+<page file="part_4.html" text="Intertwined Data" title="IV Intertwined Data"/>
+<page file="i4-5.html" text="Intermezzo:   Pattern Matching" title="Intermezzo: Pattern Matching"/>
+<page file="part_five.html" text="Generative Recursion" title="V Generative Recursion"/>
+<page file="i5-6.html" text="Intermezzo:   Vectors" title="Intermezzo: Vectors"/>
+<page file="part_six.html" text="Accumulators" title="VI Accumulators"/>
+<page file="htdp2e-epilogue.html" text="Epilogue" title="Epilogue"/>
+<page file="default.html" text="the current draft" title="How to Design Programs, Second Edition">
+<page file="part_prologue_001.html" text="Prologue:   How to Program" title="Prologue: How to Program"/>
+<page file="part_one_001.html" text="Fixed-Size Data" title="I Fixed-Size Data"/>
+<page file="i1-2_001.html" text="Intermezzo:   BSL" title="Intermezzo: BSL"/>
+<page file="part_two_001.html" text="Arbitrarily Large Data" title="II Arbitrarily Large Data"/>
+<page file="i2-3_001.html" text="Intermezzo:   Quote, Unquote" title="Intermezzo: Quote, Unquote"/>
+<page file="part_three_001.html" text="Abstraction" title="III Abstraction"/>
+<page file="intermezzo__scope_001.html" text="Intermezzo:   Scope" title="Intermezzo: Scope"/>
+<page file="part_4_001.html" text="Intertwined Data" title="IV Intertwined Data"/>
+<page file="i4-5_001.html" text="Intermezzo:   Pattern Matching" title="Intermezzo: Pattern Matching"/>
+<page file="part_five_001.html" text="Generative Recursion" title="V Generative Recursion"/>
+<page file="i5-6_001.html" text="Intermezzo:   Vectors" title="Intermezzo: Vectors"/>
+<page file="part_six_001.html" text="Accumulators" title="VI Accumulators"/>
+<page file="htdp2e-epilogue_001.html" text="Epilogue" title="Epilogue"/>
+</page>
+</page>
+</site>
