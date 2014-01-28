@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -49,85 +49,191 @@
  first rule is the only rule there is to it.</p>
 <p></p><div class="SIntrapara">Ценой за уверенность DrRacket является
  тот факт, что скобки имеют значение. Ты, программист, должен ввести
- все эти скобки, и ты не должен ввести их слишком много. Например, в
- то время как лишние скобки могут быть пропущены твоим учителем, в
- случае с BSL ты получишь ошибку. Выражение <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29"
+ все эти скобки, и должен ввести их не слишком много. В то
+ время как твой учитель может пропустить пару лишних скобок, в случае
+ с BSL ты получишь
+ ошибку. Выражение <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29"
  class="RktValLink"
  data-pltdoc="x">+</a></span><span class="stt"> </span><span class="RktPn">(</span><span class="RktVal">1</span><span class="RktPn">)</span><span class="stt"> </span><span class="RktPn">(</span><span class="RktVal">2</span><span class="RktPn">)</span><span class="RktPn">)</span>
- содержит слишком много скобок, и DrRacket без сомнений сообщит тебе об этом:
+ содержит слишком много скобок, и DrRacket без сомнений сообщит тебе
+ об этом:
 </div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span><span class="hspace">&nbsp;</span><span class="RktPn">(</span><span class="RktVal">1</span><span class="RktPn">)</span><span class="hspace">&nbsp;</span><span class="RktPn">(</span><span class="RktVal">2</span><span class="RktPn">)</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktErr">function call: expected a function after the open parenthesis, but found a number <br/>(вызов функции: после открытой скобки ожидалась функция, но было найдено число)</span></p></td></tr><tr><td><table cellspacing="0"><tbody><tr><td></td></tr></tbody></table></td></tr></tbody></table></blockquote></div><p></p><p></p>
-<div class="SIntrapara">Тем не менее, как только ты пирвыкнешь к
- программированию в BSL, ты поймёшь, что это вовсе не цена. Во-первых, используй операции сразу на нескольких операндах, если находишь это естественным:
+<div class="SIntrapara">Тем не менее, как только ты привыкнешь к
+ программированию в BSL, ты поймёшь, что это вовсе не большая
+ цена. Во-первых, делай операции сразу над несколькими операндами,
+ если находишь это естественным:
 <span class="refelem"><span class="refcolumn"><span class="refcontent">
 Или помести курсор рядом с операцией и нажми F1. Это действие откроет
 Справку DrRacket (DrRacket's HelpDesk) и найдёт документацию к
 операции. Пользуйся результатами, относящимися к Учебным Языкам HtDP
 (HtDP teaching languages). Как ты уже мог заметить, этот текст тоже
 ссылается на документацию в Справку (HelpDesk).</span></span></span>
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span><span class="hspace">&nbsp;</span><span class="RktVal">1</span><span class="hspace">&nbsp;</span><span class="RktVal">2</span><span class="hspace">&nbsp;</span><span class="RktVal">3</span><span class="hspace">&nbsp;</span><span class="RktVal">4</span><span class="hspace">&nbsp;</span><span class="RktVal">5</span><span class="hspace">&nbsp;</span><span class="RktVal">6</span><span class="hspace">&nbsp;</span><span class="RktVal">7</span><span class="hspace">&nbsp;</span><span class="RktVal">8</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="hspace">&nbsp;</span><span class="RktVal">0</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">45</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2A%29%29" class="RktValLink" data-pltdoc="x">*</a></span><span class="hspace">&nbsp;</span><span class="RktVal">1</span><span class="hspace">&nbsp;</span><span class="RktVal">2</span><span class="hspace">&nbsp;</span><span class="RktVal">3</span><span class="hspace">&nbsp;</span><span class="RktVal">4</span><span class="hspace">&nbsp;</span><span class="RktVal">5</span><span class="hspace">&nbsp;</span><span class="RktVal">6</span><span class="hspace">&nbsp;</span><span class="RktVal">7</span><span class="hspace">&nbsp;</span><span class="RktVal">8</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="hspace">&nbsp;</span><span class="RktVal">0</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">0</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">If you don’t know what an operation does for several operands, enter an
- example into the interactions area and hit "return"; DrRacket lets
- you know whether and how it works.  Second, when you will read programs that
- others write—<wbr>which you will do for about half the time of your
- programmer life—<wbr>you will never have to wonder which expressions are
- evaluated first. The parentheses and the nesting will immediately tell
- you so.</div><p></p><p>In this context, to program is to write down comprehensible, arithmetic
- expressions, and to compute is to determine their value. With DrRacket, it is
- easy to explore this kind of programming and computing.</p><h4><a name="(part._arithmetic-pro)"></a>Arithmetic And Arithmetic</h4><p>If programming were just about numbers and arithmetic, it would be as
- boring as mathematics.<span class="refelem"><span class="refcolumn"><span class="refcontent">Just kidding: mathematics is a fascinating
-subject, but you knew that. You won’t need too much of it for now, though
-if you want to be a really great programmer, you will need to study some.</span></span></span>
- Fortunately, there is much more to programming than numbers: text,
- truths, images, and more.</p><p></p><div class="SIntrapara">Here are three programs that deal with text:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello"</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello "</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hell"</span><span class="hspace">&nbsp;</span><span class="RktVal">"o world"</span><span class="RktPn">)</span></td></tr></tbody></table></blockquote></div><div class="SIntrapara">After you click <span style="font-style: italic;">RUN</span>, DrRacket displays three results:
-<span class="RktRes">"helloworld"<span class="stt"> </span>"hello world"<span class="stt"> </span>"hello world"</span></div><p></p><p></p><div class="SIntrapara">To understand exactly what’s going on, you first need to know that in BSL,
- text is any sequence of keyboard characters enclosed in double-quotes
- ("). Technically, this is called a string. Thus,
- <span class="RktVal">"hello world"</span>, is a perfectly fine string and, when DrRacket evaluates this
- string, it displays it in the interactions area, just like a number.
- Indeed, many people’s first program is one that displays the words
- “hello” and “world”—<wbr>you wrote three of them already but the simplest one is to type
- in the string by itself:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><p><span class="RktVal">"hello world"</span></p></blockquote></div><div class="SIntrapara">Click <span style="font-style: italic;">RUN</span> and admire the output of the program.</div><p></p><p></p><div class="SIntrapara">Otherwise, you need to know that in addition to an arithmetic of numbers,
- DrRacket also knows about an arithmetic of strings. Thus,
- <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span> is an operation just like <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span>; it makes a
- string by adding the second to the end of the first. As the first line
- shows, it does this literally, without adding anything between the two
- strings: no blank space, no comma, nothing. Thus, if you want to see the
- phrase <span class="RktVal">"hello world"</span>, you really need to add a space to one of
- these words somewhere; that’s what the second and third line show. Of
- course, the most natural way to create this phrase from the two words is
- to enter
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><p><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello"</span><span class="hspace">&nbsp;</span><span class="RktVal">" "</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></p></blockquote></div><div class="SIntrapara">because <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span>, like <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span>, can deal with as many
- operands as you wish.</div><p></p><p>You can do more with strings than append them. You can extract pieces from
- a string; reverse them; render all letters uppercase (or lowercase); strip
- blanks spaces from the left and right; and so on. And best of all, you
- don’t have to memorize any of that. If you need to know what you can do
- with strings, look it up in HelpDesk. <span class="refelem"><span class="refcolumn"><span class="refcontent">Use F1 or the drop-down
-menu on the right to open HelpDesk, look at the manuals for HtDP languages
-(BSL) and its section on primitives. It lists all the operations in BSL
-and especially those that work on strings.</span></span></span></p><p></p><div class="SIntrapara">If you did look up the primitive operations of BSL, you saw that
- <span style="font-style: italic;">primitive</span> (also called <span style="font-style: italic;">built-in</span>) operations can consume
- strings and produce numbers. You therefore can, if you so desire,
- add the length of a string to 20:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span><span class="hspace">&nbsp;</span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-length%29%29" class="RktValLink" data-pltdoc="x">string-length</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello world"</span><span class="RktPn">)</span><span class="hspace">&nbsp;</span><span class="RktVal">20</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">31</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">and DrRacket evaluates this expressions like any other one.
- That is, an arithmetic operation doesn’t have to be about just numbers or
- just strings. Many of them mix and match as needed. And then there are
- operations that convert strings into numbers and numbers into strings and
- you get what you expect:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._number-~3estring%29%29" class="RktValLink" data-pltdoc="x">number-&gt;string</a></span><span class="hspace">&nbsp;</span><span class="RktVal">42</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">"42"</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29" class="RktValLink" data-pltdoc="x">string-&gt;number</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"42"</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">42</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">If you expected “forty-two” or something clever along those lines,
- sorry, that’s really not what you want from a string calculator.</div><p></p><p></p><div class="SIntrapara">The second expression raises a question, though. What if <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29" class="RktValLink" data-pltdoc="x">string-&gt;number</a></span>
- isn’t used with a string that is a number wrapped in string quotes? In that
- case the operation produces a totally different kind of result:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29" class="RktValLink" data-pltdoc="x">string-&gt;number</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello world"</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">This is neither a number nor a string; it is a Boolean. Unlike numbers
- and strings, Boolean values come in only two varieties: <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span> and
- <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span>. The first is truth, the second falsehood. Even so, DrRacket
- has several operations for combining Boolean values:
-</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29" class="RktStxLink" data-pltdoc="x">and</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29" class="RktStxLink" data-pltdoc="x">and</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29" class="RktStxLink" data-pltdoc="x">or</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29" class="RktStxLink" data-pltdoc="x">or</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29" class="RktValLink" data-pltdoc="x">not</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">and you get the results that the name of the operation suggests. (Don’t
- know what <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29" class="RktStxLink" data-pltdoc="x">and</a></span>, <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29" class="RktStxLink" data-pltdoc="x">or</a></span>, and <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29" class="RktValLink" data-pltdoc="x">not</a></span> compute? Easy:
- <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29" class="RktStxLink" data-pltdoc="x">and</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="stt"> </span><span class="RktSym">y</span><span class="RktPn">)</span> is true if <span class="RktSym">x</span> and <span class="RktSym">y</span> are true;
- <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29" class="RktStxLink" data-pltdoc="x">or</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="stt"> </span><span class="RktSym">y</span><span class="RktPn">)</span> is true if either <span class="RktSym">x</span> or <span class="RktSym">y</span> or both are
- true; and <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29" class="RktValLink" data-pltdoc="x">not</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="RktPn">)</span> results in <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29" class="RktValLink" data-pltdoc="x">true</a></span> precisely when
- <span class="RktSym">x</span> is <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span>.)</div><p></p><p></p><div class="SIntrapara">Although it isn’t possible to convert one number into a Boolean, it is certainly
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29" class="RktValLink" data-pltdoc="x">+</a></span><span class="hspace">&nbsp;</span><span class="RktVal">1</span><span class="hspace">&nbsp;</span><span class="RktVal">2</span><span class="hspace">&nbsp;</span><span class="RktVal">3</span><span class="hspace">&nbsp;</span><span class="RktVal">4</span><span class="hspace">&nbsp;</span><span class="RktVal">5</span><span class="hspace">&nbsp;</span><span class="RktVal">6</span><span class="hspace">&nbsp;</span><span class="RktVal">7</span><span class="hspace">&nbsp;</span><span class="RktVal">8</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="hspace">&nbsp;</span><span class="RktVal">0</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">45</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2A%29%29" class="RktValLink" data-pltdoc="x">*</a></span><span class="hspace">&nbsp;</span><span class="RktVal">1</span><span class="hspace">&nbsp;</span><span class="RktVal">2</span><span class="hspace">&nbsp;</span><span class="RktVal">3</span><span class="hspace">&nbsp;</span><span class="RktVal">4</span><span class="hspace">&nbsp;</span><span class="RktVal">5</span><span class="hspace">&nbsp;</span><span class="RktVal">6</span><span class="hspace">&nbsp;</span><span class="RktVal">7</span><span class="hspace">&nbsp;</span><span class="RktVal">8</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="hspace">&nbsp;</span><span class="RktVal">0</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">0</span></p></td></tr></tbody></table></blockquote></div>
+<div class="SIntrapara">Если не знаешь, что именно делает операция для
+ нескольких операндов -- введи пример в область взаимодействий и нажми
+ "Enter"; DrRacket покажет тебе, как работает операция.  Во-вторых,
+ клшжа ты будешь читать чужие программы—<wbr>а этим ты будешь
+ заниматься примерно половину своей карьеры программиста—<wbr>тебе
+ никогда не придётся гадать, какое выражение выполняется
+ первым. Скобки и вложения моментально сообщат тебе.</div><p></p>
+<p>В этом контексте, программирование -- это написание понятных
+ арифметических выражений, а также вычисление их значений. С помощью
+ DrRacket очень просто изучать программирование и вычисления в этом
+ роде.</p>
+<h4><a name="(part._arithmetic-pro)"></a>Arithmetic And
+ Arithmetic</h4>
+<p>Если бы программирование было бы только о числах и арифметике, оно
+ было бы таким же скучным, как и
+ математика.
+<span class="refelem"><span class="refcolumn"><span class="refcontent">Шутка!
+ Математика -- интереснейшая наука, но тебе это и так известно. Сейчас
+ тебе потребуется совсем немного математики, но для того, чтобы стать
+ действительно хорошим программистом -- тебе придётся, всё же,
+ познакомиться с ней поближе.</span></span></span>  К счастью, в
+ программировании есть много интересного по мимо чисел: текст, правда/ложь, изображения и многое другое.</p><p></p>
+<div class="SIntrapara">Вот три программы, работающих с текстом:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello"</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello "</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29" class="RktValLink" data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hell"</span><span class="hspace">&nbsp;</span><span class="RktVal">"o world"</span><span class="RktPn">)</span></td></tr></tbody></table></blockquote></div><div class="SIntrapara">После нажатия <span style="font-style: italic;">RUN (ЗАПУСК)</span>, DrRacket отобразит такой результат:
+<span class="RktRes">"helloworld"<span class="stt"> </span>"hello world"<span class="stt"> </span>"hello world"</span></div><p></p><p></p>
+<div class="SIntrapara">Чтобы понять, что же именно пошло не так, для
+ начала тебе нужно понять, что в BSL текст -- это любая
+ последовательность клавиатурных символов, обёрнутых в двойные кавычки
+ (&quot;). Технически говоря, это называется строкой. Так,
+ <span class="RktVal">"hello world"</span> является вполне нормальной
+ строкой, и когда DrRacket выполняет эту строку, он отображает её в
+ области взаимодействий, так же как он делал с числами. Более того,
+ для большинства людей первой программой является программа, выводящая
+ на экран слова “hello” ("здравствуй") и “world”
+ ("мир")—<wbr>вообще-то ты уже написал три таких, но самой простой из
+ них была бы та, которая состояла из одной только строки:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><p><span class="RktVal">"hello world"</span></p></blockquote></div>
+<div class="SIntrapara">Нажми <span style="font-style:
+italic;">RUN</span> и восхитись выводом программы.</div><p></p><p></p>
+<div class="SIntrapara">Также, тебе необходимо знать, что в добавок к
+арифметике над числами, DrRacket также знает об арифметике над строками. Так,
+ <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29"
+ class="RktValLink" data-pltdoc="x">string-append</a></span> является
+ операцией сложения для строк, также как для чисел
+ операция <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29"
+ class="RktValLink" data-pltdoc="x">+</a></span>; он создаёт строку
+ соединяя вторую строку с концом первой. Как показала первая линия, он
+ делает это буквально, не вставляя ничего между двумя строками: ни
+ пробела, ни запятой, ничего. Таким образом, если ты хочешь видеть
+ фразу <span class="RktVal">"hello world"</span>, тебе на самом деле
+ необходимо добавить пробел к одной из фраз где-нибудь; это видно на
+ второй и третей линии. Конечно, самым естественным способом создать
+ эту фразу из двух слов -- ввести
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><p><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29"
+ class="RktValLink"
+ data-pltdoc="x">string-append</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello"</span><span class="hspace">&nbsp;</span><span class="RktVal">"
+ "</span><span class="hspace">&nbsp;</span><span class="RktVal">"world"</span><span class="RktPn">)</span></p></blockquote></div><div class="SIntrapara">поскольку <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-append%29%29"
+ class="RktValLink" data-pltdoc="x">string-append</a></span>, как
+ и <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29"
+ class="RktValLink" data-pltdoc="x">+</a></span>, умеет работать сразу
+ над несколькими операндами.</div><p></p>
+<p>Ты можешь делать со строками больше, чем просто соединять их. Ты
+ можешь извлекать из них подстроки, переворачивать задом-наперёд,
+ писать все буквы в верхнем регистре (или в нижнем), вырезать пробелы
+ слева или справа и так далее. И самое главное: тебе не нужно этого
+ всего запоминать. Если тебе интересно, что ты можешь делать со
+ строками, посмотри в
+ HelpDesk. <span class="refelem"><span class="refcolumn"><span class="refcontent">Используй
+ F1 или выпадающее меню справа в HelpDesk, ищи языки HtDP (BSL) в
+ справочных пособиях (manuals) и их секции в описаниях примитивов
+ (primitives). Там перечислины все операции в BSL, особенно те, что
+ работают со строками.</span></span></span></p><p></p>
+<div class="SIntrapara">Если ты всё же пошёл и посмотрел на список
+строковых операций BSL, ты мог увидеть 
+ <span style="font-style: italic;">примитивную (primitive)</span>
+ (также называемую <span style="font-style: italic;">встроенной
+ (built-in)</span>) операцию, которая может принимать строки и
+ производить числа. То есть, ты можешь вычислить длинну строки, и
+ прибавить к ней 20:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk"
+ cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._%2B%29%29"
+ class="RktValLink"
+ data-pltdoc="x">+</a></span><span class="hspace">&nbsp;</span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-length%29%29"
+ class="RktValLink"
+ data-pltdoc="x">string-length</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello
+ world"</span><span class="RktPn">)</span><span class="hspace">&nbsp;</span><span class="RktVal">20</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">31</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">и
+ DrRacket вычислит это выражение точно так же, как и любое другое. То
+ есть, арифметическое выражение не должно содержать только числа или
+ только строки. Многие смешивают и то и другое по мере
+ необходимости. Есть операции, конвертирующие строки в числа и числа в
+ строки, результат вполне очевиден:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk"
+ cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._number-~3estring%29%29"
+ class="RktValLink"
+ data-pltdoc="x">number-&gt;string</a></span><span class="hspace">&nbsp;</span><span class="RktVal">42</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">"42"</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29"
+ class="RktValLink"
+ data-pltdoc="x">string-&gt;number</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"42"</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">42</span></p></td></tr></tbody></table></blockquote></div>
+<div class="SIntrapara">Если ты ожидаешь результат “forty-two”
+ ("сорок-два") или что-то вроде того -- извини, но это немного не то,
+ чего в основном хотят от строкового калькулятора.</div><p></p><p></p>
+<div class="SIntrapara">Тем не менее, второе выражение вызывает
+ вопрос. Что
+ если <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29"
+ class="RktValLink" data-pltdoc="x">string-&gt;number</a></span> будет
+ использован со строкой, не состоящей только из цифер? В этом случае
+ операция производит совершенно другой результат:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string-~3enumber%29%29" class="RktValLink" data-pltdoc="x">string-&gt;number</a></span><span class="hspace">&nbsp;</span><span class="RktVal">"hello world"</span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr></tbody></table></blockquote></div>
+<div class="SIntrapara">Это ни число ни строка; это Булев (Boolean). В
+отличии от чисел и строк, Булевые (Boolean) значения принимают всего
+два
+состояния: <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+class="RktValLink" data-pltdoc="x">true (правда)</a></span> и
+ <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink" data-pltdoc="x">false (ложь)</a></span>. Первый
+ означает правдивый ответ, а второй -- ложный. У DrRacket есть
+ несколько операций для объединения Boolean'ов:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk"
+ cellspacing="0"><tbody><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">and</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+ class="RktValLink"
+ data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+ class="RktValLink"
+ data-pltdoc="x">true</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">and</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+ class="RktValLink"
+ data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink"
+ data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">or</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+ class="RktValLink"
+ data-pltdoc="x">true</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink"
+ data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">or</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink"
+ data-pltdoc="x">false</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink"
+ data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">false</span></p></td></tr><tr><td><span class="stt">&gt; </span><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29"
+ class="RktValLink"
+ data-pltdoc="x">not</a></span><span class="hspace">&nbsp;</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29"
+ class="RktValLink"
+ data-pltdoc="x">false</a></span><span class="RktPn">)</span></td></tr><tr><td><p><span class="RktRes">true</span></p></td></tr></tbody></table></blockquote></div><div class="SIntrapara">,
+ и ты получаешь результаты, соответствующие операции, которую ты
+ вызвал (and -- И, or -- ИЛИ, not -- НЕ). (Не знаешь что возвращает <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">and</a></span>, <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29"
+ class="RktStxLink" data-pltdoc="x">or</a></span>,
+ и <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29"
+ class="RktValLink" data-pltdoc="x">not</a></span>? Проще простого:
+ <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._and%29%29" class="RktStxLink" data-pltdoc="x">and</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="stt"> </span><span class="RktSym">y</span><span class="RktPn">)</span> возвращает true если <span class="RktSym">x</span> и <span class="RktSym">y</span> имеют значение true;
+ <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28form._%28%28lib._lang%2Fhtdp-beginner..rkt%29._or%29%29"
+ class="RktStxLink"
+ data-pltdoc="x">or</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="stt"> </span><span class="RktSym">y</span><span class="RktPn">)</span>
+ возвращает true если либо <span class="RktSym">x</span>
+ либо <span class="RktSym">y</span> либо оба являются true;
+ и <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._not%29%29"
+ class="RktValLink"
+ data-pltdoc="x">not</a></span><span class="stt"> </span><span class="RktSym">x</span><span class="RktPn">)</span>
+ возвращает <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._true%29%29"
+ class="RktValLink" data-pltdoc="x">true</a></span> только тогда, когда
+ <span class="RktSym">x</span> имеет значение <span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._%28%28lib._lang%2Fhtdp-beginner..rkt%29._false%29%29" class="RktValLink" data-pltdoc="x">false</a></span>.)</div><p></p><p></p><div class="SIntrapara">Although it isn’t possible to convert one number into a Boolean, it is certainly
  useful to “convert” two numbers into a Boolean:
 </div><div class="SIntrapara"><blockquote class="SCodeFlow"><table class="RktBlk" cellspacing="0"><tbody><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._~3e%29%29" class="RktValLink" data-pltdoc="x">&gt;</a></span><span class="hspace">&nbsp;</span><span class="RktVal">10</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._~3c%29%29" class="RktValLink" data-pltdoc="x">&lt;</a></span><span class="hspace">&nbsp;</span><span class="RktVal"><span class="nobreak">-1</span></span><span class="hspace">&nbsp;</span><span class="RktVal">0</span><span class="RktPn">)</span></td></tr><tr><td><span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._~3d%29%29" class="RktValLink" data-pltdoc="x">=</a></span><span class="hspace">&nbsp;</span><span class="RktVal">42</span><span class="hspace">&nbsp;</span><span class="RktVal">9</span><span class="RktPn">)</span></td></tr></tbody></table></blockquote></div><div class="SIntrapara">Guess what the results are before you move on:</div><p></p><p><span class="RktRes">true</span></p><p><span class="RktRes">true</span></p><p><span class="RktRes">false</span></p><p>Now try these: <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._~3e~3d%29%29" class="RktValLink" data-pltdoc="x">&gt;=</a></span><span class="stt"> </span><span class="RktVal">10</span><span class="stt"> </span><span class="RktVal">10</span><span class="RktPn">)</span>, <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._~3c~3d%29%29" class="RktValLink" data-pltdoc="x">&lt;=</a></span><span class="stt"> </span><span class="RktVal"><span class="nobreak">-1</span></span><span class="stt"> </span><span class="RktVal">0</span><span class="RktPn">)</span>, and
  <span class="RktPn">(</span><span class="RktSym"><a href="http://docs.racket-lang.org/htdp-langs/beginner.html#%28def._htdp-beginner._%28%28lib._lang%2Fhtdp-beginner..rkt%29._string~3d~3f%29%29" class="RktValLink" data-pltdoc="x">string=?</a></span><span class="stt"> </span><span class="RktVal">"design"</span><span class="stt"> </span><span class="RktVal">"tinker"</span><span class="RktPn">)</span>. This last one is totally different
